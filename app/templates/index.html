@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+    <h2>Необходимые индигриенты</h2>
+    <ul>   
+        {% for x, y in recipe.items %}
+            <li>{{ x }} : {{ y }}
+        {% endfor %}
+    </ul>
+</body>
+</html>
